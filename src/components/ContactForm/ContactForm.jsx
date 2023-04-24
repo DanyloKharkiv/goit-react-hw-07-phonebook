@@ -21,7 +21,7 @@ export const ContactForm = () => {
 
     if (contacts.items.find(contact => contact.name === name.value && contact.number === number.value )) {
       Report.warning(
-        'Phonebook Warning',
+        'numberbook Warning',
         'The contact already exists with this name',
         'Okay',
       );
@@ -42,13 +42,13 @@ export const ContactForm = () => {
                     required
                 />
             </label>
-            <label className={style.title}>Number
+            <label className={style.title}>number
                 <input className={style.input}
                     placeholder="000-00-00"
                     type="tel"
                     name="number"
                     pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-                    title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+                    title="number number must be digits and can contain spaces, dashes, parentheses and can start with +"
                     required
                 />
             </label>
